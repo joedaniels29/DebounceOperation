@@ -26,3 +26,4 @@ iOSInjectionProject/
 /log/*.log
 /tmp
 
+.build/
