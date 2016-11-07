@@ -1,0 +1,47 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["<DebounceOperation.module>","<DebounceOperationTests.module>","<DebounceOperationPackageTests.test>"]
+  "main": ["<DebounceOperation.module>"]
+default: "main"
+commands: 
+  "<DebounceOperation.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "DebounceOperation"
+    module-output-path: "/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperation.swiftmodule"
+    inputs: []
+    outputs: ["<DebounceOperation.module>","/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperation.build/Implementation.swift.o"]
+    import-paths: ["/Users/Joe/Projects/Mine/DebounceOperation/.build/debug"]
+    temps-path: "/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperation.build"
+    objects: ["/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperation.build/Implementation.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-module-cache-path","/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/ModuleCache"]
+    sources: ["/Users/Joe/Projects/Mine/DebounceOperation/Sources/Implementation.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<DebounceOperationTests.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "DebounceOperationTests"
+    module-output-path: "/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.swiftmodule"
+    inputs: ["<DebounceOperation.module>"]
+    outputs: ["<DebounceOperationTests.module>","/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.build/DebounceOperation.swift.o"]
+    import-paths: ["/Users/Joe/Projects/Mine/DebounceOperation/.build/debug"]
+    temps-path: "/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.build"
+    objects: ["/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.build/DebounceOperation.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-module-cache-path","/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/ModuleCache"]
+    sources: ["/Users/Joe/Projects/Mine/DebounceOperation/Tests/DebounceOperationTests/DebounceOperation.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<DebounceOperationPackageTests.test>":
+    tool: shell
+    description: "Linking ./.build/debug/DebounceOperationPackageTests.xctest/Contents/MacOS/DebounceOperationPackageTests"
+    inputs: ["/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.build/DebounceOperation.swift.o","/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperation.build/Implementation.swift.o"]
+    outputs: ["<DebounceOperationPackageTests.test>","/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationPackageTests.xctest/Contents/MacOS/DebounceOperationPackageTests"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-g","-L/Users/Joe/Projects/Mine/DebounceOperation/.build/debug","-o","/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationPackageTests.xctest/Contents/MacOS/DebounceOperationPackageTests","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-module-name","DebounceOperationPackageTests","-Xlinker","-bundle","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.build/DebounceOperation.swift.o","/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperation.build/Implementation.swift.o"]
+

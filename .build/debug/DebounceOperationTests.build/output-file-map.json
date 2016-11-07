@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.build/master.swiftdeps"
+  },
+  "/Users/Joe/Projects/Mine/DebounceOperation/Tests/DebounceOperationTests/DebounceOperation.swift": {
+    "dependencies": "/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.build/DebounceOperation.d",
+    "object": "/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.build/DebounceOperation.swift.o",
+    "swiftmodule": "/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.build/DebounceOperation~partial.swiftmodule",
+    "swift-dependencies": "/Users/Joe/Projects/Mine/DebounceOperation/.build/debug/DebounceOperationTests.build/DebounceOperation.swiftdeps"
+  }
+}

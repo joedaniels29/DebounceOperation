@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "e308301346af2b346ad3e0ba7637a334"
+build_time: [531860977, 832752000]
+inputs:
+  "/Users/Joe/Projects/Mine/DebounceOperation/Tests/DebounceOperationTests/DebounceOperation.swift": [531860537, 0]
