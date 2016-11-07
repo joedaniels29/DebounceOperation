@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DebounceOperation"
-  s.version      = "<%=version%>"
+  s.version      = "0.1.1"
   s.summary      = "Beautiful iOS Time Picker inspired by the ios 10 \"Bedtime\" Timer."
 
   # This description is used to generate tags and improve search results.
