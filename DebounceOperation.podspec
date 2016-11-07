@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "DebounceOperation"
   s.version      = "0.1.1"
-  s.summary      = "Beautiful iOS Time Picker inspired by the ios 10 \"Bedtime\" Timer."
+  s.summary      = "Microlibrary to help you do a bit less work, a little later."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  NSOperation subclass coelescing invocations of a given block so that it happens only once.
+  A well tested Micriolibrary NSOperation subclass coelescing invocations of a given block so that it happens only once.
                    DESC
 
   s.homepage     = "https://github.com/joedaniels29/DebounceOperation"
@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "10Clock/*.swift"
-  s.exclude_files = "SwiftClock/*"
+  s.source_files  = "Sources"
+  #s.exclude_files = "SwiftClock/*"
 
   # s.public_header_files = "Classes/**/*.h"
 
